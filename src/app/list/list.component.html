@@ -1,0 +1,5 @@
+<div class="list-div">
+    <ul class="list-group">
+        <app-item [todo]="todo"  *ngFor="let todo of todoList$ | async" (itemChecked)="checkboxChange()" (deleteItem)="deleteClick($event)" (editItem)="editClick($event)"></app-item>
+    </ul>
+</div>

@@ -1,0 +1,18 @@
+<div class="tab-div">
+  <ul class="nav nav-pills nav-fill">
+    <li
+      class="nav-item"
+      *ngFor="let tab of tabs"
+      (click)="selectedTab = tab.filter"
+    >
+      <a
+        class="nav-link"
+        [ngClass]="{ active: tab.filter === selectedTab }"
+        aria-current="page"
+        [queryParams]="{ filter: tab.filter }"
+        routerLink="/"
+        >{{ tab.name }}</a
+      >
+    </li>
+  </ul>
+</div>

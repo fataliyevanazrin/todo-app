@@ -1,0 +1,5 @@
+<div class="container">
+    <app-tab></app-tab>
+    <app-list (itemChecked)="itemChecked()" (deleteItem)="deleteItem($event)" (editItem)="editItem($event)"></app-list>
+    <button (click)="addButton()" class="btn btn-primary">Add new task</button>
+</div>

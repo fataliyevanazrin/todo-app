@@ -1,0 +1,30 @@
+li {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    border-width: 0 0 var(--bs-list-group-border-width);
+    .list-div {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        input[type="checkbox"] {
+            width: 1.8em;
+            height: 1.8em;
+        }
+
+        h3 {
+            font-size: 20px;
+            margin: 0;
+        }
+        p{
+            color: gray;
+            margin: 0;
+        }
+    }  
+    .icons-holder-div {
+        display: flex;
+        gap: 10px;
+    } 
+}

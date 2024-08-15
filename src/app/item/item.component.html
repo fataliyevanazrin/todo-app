@@ -1,0 +1,13 @@
+<li class="list-group-item">
+    <div class="list-div">
+            <input class="form-check-input me-1" type="checkbox" [(ngModel)]="todo.done" (change)="checkboxChange()">
+            <label class="form-check-label">
+                <h3  [ngClass]="{'text-decoration-line-through': todo.done}">{{todo.title}}</h3>
+                <p>{{todo.description}}</p>
+            </label>
+    </div>
+    <div class="icons-holder-div">
+        <i (click)="editClick(todo)" class="bi bi-pencil-square"></i>
+        <i (click)="deleteClick(todo.id)" class="bi bi-trash"></i>
+    </div>
+</li>

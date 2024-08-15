@@ -1,0 +1,37 @@
+<div class="modal-header">
+  <h4 class="modal-title">Add new task</h4>
+  <button
+    type="button"
+    class="btn-close"
+    aria-label="Close"
+    (click)="activeModal.close('Cross click')"
+  ></button>
+</div>
+<div class="modal-body" [formGroup]="addItemForm">
+  <div class="mb-3">
+    <label class="form-label">Add title</label>
+    <input formControlName="title" class="form-control" [ngClass]="{error: title?.invalid && submitted}" required />
+    <div *ngIf="title?.invalid && submitted" class="text-danger">
+      Title is required
+    </div>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Add description</label>
+    <textarea
+      formControlName="description"
+      class="form-control"
+      rows="3"
+    ></textarea>
+  </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-primary" *ngIf="!todo" (click)="onSave()">Save</button>
+  <button type="button" class="btn btn-primary" *ngIf="todo" (click)="onUpdate()">Save</button>
+  <button
+    type="button"
+    class="btn btn-outline-secondary"
+    (click)="activeModal.close('Close click')"
+  >
+    Close
+  </button>
+</div>
