@@ -2,26 +2,50 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.2.
 
-## Development server
+## Overview
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+TodoApp is a simple and intuitive Angular-based task management application that helps users manage their daily tasks. The application is divided into three main sections:
+- **All Tasks**: Displays all tasks, both resolved and unresolved.
+- **Resolved Tasks**: Displays tasks that have been completed.
+- **Unresolved Tasks**: Displays tasks that are yet to be completed.
 
-## Code scaffolding
+Each task has a checkbox to mark it as resolved or unresolved, and a delete button to remove it. Users can also add new tasks using an input field.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Features
 
-## Build
+- **Task Management**: Easily add, delete, and manage tasks.
+- **Task Status**: Mark tasks as resolved or unresolved using a checkbox.
+- **Automatic Task Transfer**: Automatically move tasks from the "Unresolved Tasks" section to the "Resolved Tasks" section when the checkbox is clicked.
+- **Task Overlining**: Overline the task header when marked as resolved.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Installation
 
-## Running unit tests
+To run this project locally, follow these steps:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/same-letter.git
+    cd same-letter
+    ```
 
-## Running end-to-end tests
+2. **Install the dependencies:**
+    ```bash
+    npm install
+    ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. **Run the application:**
+    ```bash
+    ng serve
+    ```
 
-## Further help
+4. Open your browser and navigate to `http://localhost:4200`.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Usage
+
+-Adding a Task: Use the input field and the "Add Task" button to add a new task to the list.
+-Marking a Task as Resolved/Unresolved: Click the checkbox next to a task to toggle its status. When a task is resolved, it will move to the "Resolved Tasks" section.
+-Deleting a Task: Click the delete button next to a task to remove it from the list.
+
+## License
+
+This project is licensed under the MIT License
