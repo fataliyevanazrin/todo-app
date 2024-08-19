@@ -23,11 +23,10 @@ Each task has a checkbox to mark it as resolved or unresolved, and a delete butt
 To run this project locally, follow these steps:
 
 1. **Clone the repository:**
-    ```bash
-    git clone https://github.com/your-username/same-letter.git
-    cd same-letter
-    ```
-
+   ```bash
+   git clone https://github.com/yourusername/TodoApp.git
+   cd TodoApp
+   
 2. **Install the dependencies:**
     ```bash
     npm install
